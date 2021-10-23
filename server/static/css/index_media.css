@@ -1,0 +1,310 @@
+@media (max-width: 1400px) {
+	.main__top-list {
+		max-height: 500px;
+	}
+
+	.main__sample-select--list {
+		font-size: 24px;
+		line-height: 28px;
+	}
+
+	.main__sample-select--option,
+	.main__top-list-text {
+		font-size: 22px;
+		line-height: 26px;
+	}
+
+	.main__footer-btn {
+		padding: 14px 20px;
+		font-size: 34px;
+		line-height: 38px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.main__sample-title {
+		font-size: 42px;
+		line-height: 48px;
+	}
+
+	.main__top-list {
+		max-height: 450px;
+	}
+
+	.main__footer-btn {
+		padding: 10px 20px;
+		font-size: 30px;
+		line-height: 32px;
+	}
+}
+
+@media (max-width: 1050px) {
+	.main {
+		padding: 60px 0;
+	}
+
+	.main__top-list {
+		max-height: 400px;
+	}
+
+	.main__sample-select--list {
+		font-size: 22px;
+		line-height: 24px;
+	}
+
+	.main__sample-select--option,
+	.main__top-list-text {
+		font-size: 20px;
+		line-height: 22px;
+	}
+
+	.main__footer-btn {
+		font-size: 28px;
+		line-height: 30px;
+	}
+}
+
+@media (max-width: 950px) {
+	.main__top-list {
+		max-height: 350px;
+	}
+
+	.main__sample-select--list {
+		font-size: 20px;
+		line-height: 20px;
+	}
+
+	.main__sample-select--option,
+	.main__top-list-text {
+		font-size: 18px;
+		line-height: 18px;
+	}
+
+	.main__top-list-date {
+		margin-bottom: 5px;
+	}
+
+	.main__top-list-btn {
+		font-size: 20px;
+		line-height: 22px;
+	}
+
+	.main__footer {
+		width: 85%;
+	}
+
+	.main__footer-btn {
+		font-size: 26px;
+		line-height: 26px;
+	}
+}
+
+@media (max-width: 850px) {
+	.main__sample-title {
+		font-size: 38px;
+		line-height: 44px;
+	}
+
+	.main {
+		padding: 50px 0;
+	}
+
+	.main__top {
+		flex-wrap: wrap;
+	}
+
+	.main__top-stream {
+		width: 100%;
+		margin: 0 auto 20px;
+	}
+
+	.main__top-list {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.main__top-list-title {
+		margin-bottom: 5px;
+	}
+
+	.main__top-list-date {
+		margin-bottom: 5px;
+		width: 45%;
+		display: inline-flex;
+	}
+
+	.main__footer-btn {
+		padding: 8px 15px;
+		font-size: 23px;
+		line-height: 24px;
+	}
+}
+
+@media (max-width: 750px) {
+	.main__sample-title {
+		font-size: 36px;
+		line-height: 42px;
+	}
+
+	.main__footer-item {
+		width: 45%;
+	}
+
+	.main__footer {
+		width: 85%;
+	}
+
+	.main__footer-btn {
+		padding: 8px 10px;
+		font-size: 22px;
+		line-height: 24px;
+	}
+}
+
+@media (max-width: 575px) {
+	.main__sample {
+		margin-bottom: 50px;
+	}
+
+	.main__footer {
+		width: 85%;
+	}
+
+	.main__sample-select--list {
+		width: 90%;
+	}
+}
+
+@media (max-width: 500px) {
+	.main__sample-title {
+		font-size: 30px;
+		line-height: 36px;
+	}
+
+	.main {
+		padding: 30px 0;
+	}
+
+	.main__sample-select--list {
+		font-size: 20px;
+		line-height: 22px;
+	}
+
+	.main__sample-select--option,
+	.main__top-list-text {
+		font-size: 18px;
+		line-height: 20px;
+	}
+
+	.main__top-list-date {
+		width: 100%;
+		display: flex;
+	}
+
+	.main__top-list-img {
+		width: 20px;
+		height: 20px;
+		margin-right: 15px;
+	}
+
+	.main__top-list-btn {
+		font-size: 16px;
+		line-height: 18px;
+	}
+
+	.main__hr {
+		height: 0px !important;
+		margin: 20px auto;
+	}
+
+	.main__footer {
+		width: 100%;
+		flex-wrap: wrap;
+	}
+
+	.main__footer-item {
+		width: 40%;
+		margin: 15px auto;
+	}
+
+	.main__footer-btn {
+		padding: 8px 15px;
+		font-size: 20px;
+		line-height: 22px;
+	}
+}
+
+@media (max-width: 410px) {
+	.main__sample-title {
+		font-size: 26px;
+		line-height: 32px;
+	}
+
+	.main__sample-select--list {
+		height: 50px;
+		padding: 5px 10px;
+	}
+}
+
+@media (max-width: 320px) {
+	.main__sample-title {
+		font-size: 26px;
+		line-height: 32px;
+	}
+
+	.main {
+		padding: 30px 0;
+	}
+
+	.main__sample-select--list {
+		font-size: 18px;
+		line-height: 20px;
+	}
+
+	.main__sample-select--option,
+	.main__top-list-text {
+		font-size: 16px;
+		line-height: 18px;
+	}
+
+	.main__top-list-date {
+		width: 100%;
+		display: flex;
+	}
+
+	.main__top-list-img {
+		width: 20px;
+		height: 20px;
+		margin-right: 15px;
+	}
+
+	.main__top-list-btn {
+		font-size: 16px;
+		line-height: 18px;
+	}
+
+	.main__hr {
+		height: 0px !important;
+		margin: 20px auto;
+	}
+
+	.main__footer {
+		width: 100%;
+		flex-wrap: wrap;
+	}
+
+	.main__footer-item {
+		width: 70%;
+		margin: 0 auto 10px !important;
+	}
+
+	.main__footer-hr {
+		display: none;
+	}
+
+	.main__footer-btn {
+		padding: 8px 15px;
+		font-size: 20px;
+		line-height: 22px;
+	}
+}

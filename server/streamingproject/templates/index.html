@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hackathon-1</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+  {% load static %}
+  <link rel="stylesheet" href="{% static "css/reset.css" %}">
+  <link rel="stylesheet" href="{% static "css/style.css" %}">
+  <link rel="stylesheet" href="{% static "css/media.css" %}">
+
+  <link rel="stylesheet" href="{% static "css/index.css" %}">
+  <link rel="stylesheet" href="{% static "css/index_media.css" %}">
+  <style>
+    #zatemnenie {
+      background: rgba(102, 102, 102, 0.5);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none;
+    }
+
+    #okno {
+      width: 40%;
+      height: 50%;
+      text-align: center;
+      padding: 15px;
+      border: 3px solid #78bcc5;
+      border-radius: 10px;
+      color: #383636;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    #zatemnenie:target {
+      display: block;
+    }
+
+    .close {
+      display: inline-block;
+      color: #78bcc5;
+      font-size: 20px;
+      line-height: 24px;
+      padding: 10px 20px;
+      margin: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      border: 2px solid #78bcc5;
+      background-color: #ffffff;
+      border-radius: 15px;
+      font-weight: normal;
+    }
+    .close:hover {
+      color: #ffffff !important;
+      background: #78bcc5;
+      display: block;
+    }
+
+    .okno__wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: inherit;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .okno-btn {
+      font-family: "Reem Kufi", sans-serif;
+      width: 32%;
+      text-align: center;
+      padding: 5px 15px;
+      border: 6px solid #78bcc5;
+      font-weight: normal;
+      font-size: 96px;
+      line-height: 96px;
+      color: #78bcc5;
+      background-color: #ffffff;
+      display: block;
+      border-radius: 15px;
+      margin: 10px;
+    }
+
+    .okno-btn:hover {
+      color: #ffffff !important;
+      background: #78bcc5;
+      display: block;
+    }
+
+  </style>
+</head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<body>
+
+  <header class="header">
+    <img class="header__bg" src="{% static "images/header__bg.png" %}" alt="">
+    <div class="header__inner">
+      <img class="header__logo" src="{% static "images/header__logo.png" %}" alt="logo">
+      <h3 class="header__title">Checking video for cheating</h3>
+      <div class="header__btns">
+        <a class="header__account" href="/profile">
+          <img class="header__account-img header-img" src="{% static "images/header__account-img.png" %}" alt="">
+        </a>
+        <hr class="header__btnd-hr">
+        <a class="header__notifications" href="">
+          <img class="header__notifications-img header-img" src="{% static "images/header__notifications-img.png" %}" alt="">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="main__sample">
+        <h2 class="main__sample-title">Choose a discipline:</h2>
+        <select class="main__sample-select--list" name="discipline" id="">
+          <option class="main__sample-select--option" value="Предмет №1">maths</option>
+          <option class="main__sample-select--option" value="Предмет №2">physics</option>
+          <option class="main__sample-select--option" value="Предмет №3">history</option>
+          <option class="main__sample-select--option" value="Предмет №4">biology</option>
+
+        </select>
+      </div>
+
+      <div class="main__top">
+        <div class="main__top-stream">
+          <img src="{% url 'dynamic_stream' num=1 stream_path='0' %}" style="border: 1px slategray solid" width="1000px" height="562px">
+        </div>
+        <ul id="del" class="main__top-list">
+
+
+
+
+
+
+
+
+
+        </ul>
+      </div>
+
+      <hr class="main__hr">
+
+      <div class="main__footer">
+        <div class="main__footer-item">
+          <button class="main__footer-btn" onclick="clearBox()">Start</button>
+        </div>
+        <div class="main__footer-item">
+          <button class="main__footer-btn" onclick="$.get('/end',{}, function (data, status){
+        })">End</button>
+        </div>
+        <div class="main__footer-item">
+          <a class="main__footer-btn" href="#zatemnenie">rate</a>
+        </div>
+        <div id="zatemnenie">
+          <div id="okno">
+            <div class="okno__wrapper">
+              <button class="okno-btn"><a href="#">2</a></button>
+              <button class="okno-btn"><a href="#">3</a></button>
+              <button class="okno-btn"><a href="#">4</a></button>
+              <button class="okno-btn"><a href="#">5</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="{% static "js/slick.min.js" %}"></script>
+  <script src="{% static "js/main.js" %}"></script>
+</body>
+<script>
+  let idarry = []
+  let timerId = setInterval(get, 5000);
+
+  function get() {
+    $.get("/info",{}, function (data, status){
+      for (let i = 0; i < data.info.length; i++) { // выведет 0, затем 1, затем 2
+        if (!(idarry.includes(data.info[i].ids))) {
+          idarry.push(data.info[i].ids);
+          console.log(data.info[i]);
+          setTimeout(mouseStop(data.info[i]), 200)};
+      };
+    });
+  };
+
+  function clearBox() {
+    document.getElementById('del').innerHTML = "";
+    clearArray(idarry);
+    $.get('/start',{}, function (data, status){ console.log('yyy'); })
+  }
+
+  function clearArray(array) {
+    while (array.length) {
+      array.pop();
+    }
+  }
+
+  function mouseStop(val) {
+    var arr_types = [
+      "Two_Person",
+      "Programs",
+      "Devises",
+      "Eyes",
+      "Mouse",
+      "Undetection"
+    ];
+    var arr_classe = [
+      "one",
+      "two",
+      "three",
+      "four",
+      "five",
+      "six"
+    ];
+    var type = arr_types[val.type];
+    var myclass = arr_classe[val.type];
+    var divBlock = '<li class="main__top-list-item">' +
+            '<div class="main__top-list-info">'+
+            '<div class="main__top-list-info-type main__top-list-info-type-' + myclass + '"></div>'+
+            '<div class="main__top-list-info--inner" value=' + (val.ids) + '>'+
+            '<h5 class="main__top-list-text main__top-list-title">'+type+'</h5>'+
+            '<p class="main__top-list-text main__top-list-date">'+
+            '<img class="main__top-list-img" src="{% static "images/main__top-list-time.png"%}" alt="">'+
+            '<span>'+val.time+'</span></p>'+
+            '<p class="main__top-list-text main__top-list-date">'+
+            '<img class="main__top-list-img" src="{% static "images/main__top-list-date.png"%}" alt="">'+
+            '<span>'+val.date+'</span></p> </div> </div>'+
+             '</li>';
+    $('.main__top-list').append(divBlock);
+  }
+</script>
+
+<script>
+  function vid(ids){
+    $.get("/play/" + ids, {}, function (data, status) {});
+  }
+  $(document).ready(function () {
+    var timeout;
+    var counterDiv=0;
+
+    $("body").on("click", "main__top-list-btn", function () {
+      console.log(this);
+      $(this).parent().remove();
+    });
+
+
+
+    $('body').on('click','.main__top-list-info--inner',function(){
+      console.log($(this).attr('value'));
+      vid($(this).attr('value'))
+    })
+
+  });
+</script>
+</html>

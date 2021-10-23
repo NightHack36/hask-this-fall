@@ -1,0 +1,272 @@
+.main {
+	width: 100%;
+	padding: 100px 0;
+}
+
+.main__title {
+	display: block;
+	width: 25%;
+	background: #78bcc5;
+	border-radius: 10px;
+	margin-bottom: 49px;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 42px;
+	color: #ffffff;
+	text-align: center;
+}
+
+.main__account {
+	width: 100%;
+	margin-bottom: 49px;
+	position: relative;
+	background: #6a9ca3;
+	border-radius: 20px;
+	padding: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main__account-edit {
+	position: absolute;
+	top: 5%;
+	right: 2%;
+	width: 44px;
+	height: 44px;
+}
+
+.main__account-avatar {
+	width: 20%;
+	max-width: 255px;
+	max-height: 270px;
+	margin-right: 35px;
+	border: 2px solid #78bcc5;
+	border-radius: 15px;
+	background: #d7e8ea;
+}
+
+.main__account-img {
+	width: 86%;
+	margin: 0 auto;
+}
+
+.main__account-avatar--edit {
+	width: 100%;
+	text-align: center;
+	padding: 4px 10px;
+	background: #ffffff;
+	border: none;
+	border-top: 2px solid #78bcc5;
+	border-radius: 0px 0px 15px 15px;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 23px;
+	text-align: center;
+	color: #383636;
+}
+
+.main__account-info {
+	width: 80%;
+}
+
+.main__account-name {
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 42px;
+	color: #fff;
+	margin-bottom: 22px;
+}
+
+.main__account-login {
+	display: flex;
+	margin-bottom: 30px;
+	align-items: center;
+}
+
+.main__account-title {
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 23px;
+	color: #d7e8ea;
+	margin-right: 11px;
+	margin-bottom: 9px;
+}
+
+.main__account-login .main__account-title {
+	margin-bottom: 0;
+}
+
+.main__account-text {
+	width: auto;
+	max-width: 250px;
+	background: #d7f2f3;
+	border-radius: 10px;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 23px;
+	color: #000000;
+	padding: 4px 10px;
+}
+
+.main__account-options {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.main__account-item {
+	margin: 0 25px 10px 0;
+}
+
+.main__list {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.main__list-item {
+	width: 47%;
+	margin-bottom: 40px;
+	background: #6a9ca3;
+	border-radius: 20px;
+	padding: 36px 30px 26px;
+}
+
+.main__list-item--top {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+	align-items: center;
+}
+
+.main__list-avatar {
+	width: 100%;
+	max-width: 150px;
+	max-height: 200px;
+	margin-right: 20px;
+}
+
+.main__list-img {
+	width: 100%;
+	margin: 0 auto 5px;
+}
+
+.main__list-avatar-type {
+	background: #d7e8ea;
+	border: 1px solid #000000;
+	border-radius: 5px 5px 10px 10px;
+	width: 100%;
+	text-align: center;
+	padding: 4px 7px;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 23px;
+	text-align: center;
+	color: #000000;
+}
+
+.main__list-info {
+	width: 100%;
+}
+
+.main__list-title {
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 35px;
+	color: #ffffff;
+	margin-bottom: 14px;
+}
+
+.main__list-info-item {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 15px;
+}
+
+.main__list-info-title {
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 23px;
+	color: #d7e8ea;
+	margin-right: 11px;
+}
+
+.main__list-info-text {
+	background: #d7f2f3;
+	border-radius: 10px;
+	width: 100%;
+	max-width: 200px;
+	text-align: center;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 23px;
+	color: #000000;
+	padding: 4px 10px;
+}
+
+.main__list-info-options {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.main__list-info-options .main__list-info-item {
+	flex-direction: column;
+	margin-right: 20px;
+}
+
+.main__list-info-options .main__list-info-title {
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 23px;
+	color: #d7e8ea;
+	margin-bottom: 9px;
+	margin-right: 0;
+}
+
+.main__list-rating {
+	width: 15%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main__list-rating-item {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.main__list-rating-title {
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 23px;
+	margin-bottom: 6px;
+	color: #d7e8ea;
+}
+
+.main__list-rating-text {
+	background: #d7f2f3;
+	border-radius: 10px;
+	width: 100%;
+	max-width: 200px;
+	text-align: center;
+	font-weight: normal;
+	font-size: 35px;
+	line-height: 41px;
+	color: #000000;
+	padding: 10px;
+}
+
+.main__list-item--footer {
+	width: 100%;
+}
+
+.main__list-info-options .main__list-info-item .main__list-info-text {
+	max-width: 400px;
+}

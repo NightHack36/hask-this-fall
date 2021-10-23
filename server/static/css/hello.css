@@ -1,0 +1,48 @@
+.main {
+	width: 100%;
+	padding: 100px 0;
+}
+
+.main__wrapper {
+	width: 100%;
+	margin-top: 10%;
+}
+
+.mir__logo {
+	margin: 0 auto 80px;
+	display: block;
+	width: 60%;
+}
+
+.mir__link {
+	background: #15f9d8;
+	box-shadow: 0px 4px 4px rgba(56, 54, 54, 0.25);
+	border-radius: 15px;
+	width: 40%;
+	padding: 30px;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 42px;
+	color: #383636 !important;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+}
+
+@media (max-width: 700px) {
+	.mir__link {
+		width: 60%;
+		padding: 15px;
+		font-size: 30px;
+		line-height: 36px;
+	}
+}
+
+@media (max-width: 400px) {
+	.mir__link {
+		width: 85%;
+		padding: 15px;
+		font-size: 25px;
+		line-height: 30px;
+	}
+}

@@ -1,0 +1,245 @@
+.main {
+	width: 100%;
+	padding: 100px 0;
+}
+/*  */
+/*  */
+
+.main__sample {
+	width: 100%;
+	margin-bottom: 100px;
+}
+
+.main__sample-title {
+	text-align: center;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 56px;
+	color: #383636;
+	width: 100%;
+	margin: 0 auto 35px;
+}
+
+.main__sample-select--list {
+	margin: 0 auto 20px;
+	height: 58px;
+	border: 2px solid #78bcc5;
+	filter: drop-shadow(0px 4px 4px rgba(120, 188, 197, 0.25));
+	border-radius: 15px;
+	width: 70%;
+	background-color: #ffffff;
+	display: block;
+	padding: 14px 20px;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	color: #383636;
+}
+
+.main__sample-select--option {
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	color: #383636;
+	background-color: #ffffff;
+}
+
+.main__sample-select--option:hover,
+.main__sample-select--option:focus {
+	background-color: #78bcc5;
+	color: #ffffff;
+}
+
+/*  */
+/*  */
+
+.main__top {
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.main__top-stream {
+	width: 65%;
+	margin-right: 10px;
+	border: 2px solid #78bcc5;
+	border-radius: 15px;
+	height: 100%;
+}
+
+.main__top-stream-img {
+	width: 100%;
+}
+
+.main__top-list {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #ffffff;
+	height: 100%;
+	max-height: 600px;
+	overflow-y: auto;
+}
+
+.main__top-list-item {
+	width: 100%;
+	margin-bottom: 16px;
+	border: 2px solid #78bcc5;
+	border-radius: 15px;
+}
+
+.main__top-list-info {
+	width: 100%;
+	border-radius: 15px 15px 0px 0px;
+	display: flex;
+}
+
+.main__top-list-info-type {
+	border-radius: 13px 0px 0px 0px;
+	height: auto;
+	width: 10%;
+}
+
+/* Более 1 человека в кадре */
+.main__top-list-info-type-one {
+	background: #2e8ee1;
+}
+
+/* Взгляд */
+.main__top-list-info-type-two {
+	background: #80c4f5;
+}
+
+/* Запрещенное ПО */
+.main__top-list-info-type-three {
+	background: #ff0743;
+}
+
+/* Bluetooth-соединения */
+.main__top-list-info-type-four {
+	background: #1bff07;
+}
+
+/* Не идентифицированный пользователь */
+.main__top-list-info-type-five {
+	background: #ffc107;
+}
+
+/* Клики мыши */
+.main__top-list-info-type-six {
+	background: #383636;
+}
+
+.main__top-list-text {
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	color: #383636;
+}
+
+.main__top-list-info--inner {
+	text-align: left;
+	width: 100%;
+}
+
+.main__top-list-title {
+	width: 100%;
+	padding: 8px 10px;
+	text-align: center;
+	border-bottom: 1px solid #78bcc5;
+	margin-bottom: 9px;
+}
+
+.main__top-list-date {
+	padding: 2px 10px;
+	margin-bottom: 9px;
+	display: flex;
+	align-items: center;
+}
+
+.main__top-list-img {
+	width: 24px;
+	height: 24px;
+	margin-right: 20px;
+	display: inline-block;
+}
+
+/*  */
+.main__top-list-btn {
+	width: 100%;
+	text-align: center;
+	padding: 6px 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #78bcc5;
+	border-radius: 0px 0px 10px 10px;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+	color: #ffffff !important;
+}
+
+.main__hr {
+	width: 90%;
+	height: 0px;
+	margin: 40px auto 35px;
+	display: block;
+	border: 2px solid #78bcc5;
+	opacity: 1;
+	border-radius: 5px;
+}
+
+.main__footer {
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main__footer-item {
+	width: 30%;
+	border: 2px solid #78bcc5;
+	border-radius: 15px;
+	text-align: center;
+}
+
+.main__footer-item:nth-child(2) {
+	margin: 15px;
+}
+
+.main__footer-item:hover,
+.main__footer-btn:hover {
+	color: #ffffff !important;
+	background: #78bcc5;
+	border-radius: 15px;
+	display: block;
+}
+
+.main__footer-btn {
+	padding: 16px 20px;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	border: none;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 42px;
+	color: #383636 !important;
+	display: block;
+}
+
+.main__footer-hr {
+	width: 7%;
+	height: 0px !important;
+	border: 2px solid #78bcc5;
+	transform: rotate(90deg);
+	opacity: 1;
+	border-radius: 5px;
+}
